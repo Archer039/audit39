@@ -30,6 +30,11 @@ gulp.task('html', function() {
         .pipe(gulp.dest('public/'));
 });
 
+gulp.task('js', function() {
+    return gulp.src('app/js/*.js')
+        .pipe(gulp.dest('public/js/'));
+});
+
 gulp.task('fonts', function() {
     return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('public/fonts/'));
@@ -43,6 +48,7 @@ gulp.task('img', function() {
 gulp.task('watch', function() {
     gulp.watch('app/scss/*.scss', gulp.series('sass'));
     gulp.watch('app/**/*.html', gulp.series('html'));
+    gulp.watch('app/js/*.js', gulp.series('js'));
     gulp.watch('app/fonts/*', gulp.series('fonts'));
     gulp.watch('app/img/*', gulp.series('img'));
 });
