@@ -47,6 +47,12 @@ svg {
     width: 90px;
 }
 
+.load-info {
+    position: relative;
+    top: 27%;
+    left: 45%;
+}
+
 @keyframes move-fil0 {
     0%{
         transform: translateX(-50vw) translateY(75px) scale(2.5);
