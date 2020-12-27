@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: "MyriadProCondRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("MyriadProCondRegular"),
+        url("../fonts/MyriadProCondRegular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Oswald-Regular.woff") format("woff");
+}
+
+.preloader {
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.svg-animation-load {
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows {
+
+}
+
+.company-name {
+    font-family: "Oswald";
+    font-size: 60px;
+}
+
+svg {
+    overflow: visible;
+    width: 90px;
+}
+
+@keyframes move-fil0 {
+    0%{
+        transform: translateX(-50vw) translateY(75px) scale(2.5);
+        fill: #000000;
+    }
+    80%{
+        transform: translateX(17px) translateY(75px) rotate(0deg) scale(2.5);
+        fill: #000000;
+    }
+    100%{
+        transform: translateX(17px) translateY(115px) rotate(-45deg) scale(2.5);
+        fill: #006432;
+    }
+}
+
+@keyframes move-fil1 {
+    0%{
+        transform: translateX(70vw) translateY(45px) scale(2.5);
+        fill: #000000;
+    }
+    80%{
+        transform: translateX(0px) translateY(45px) rotate(0deg) scale(2.5);
+        fill: #000000;
+    }
+    100%{
+        transform: translateX(0px) translateY(75px) rotate(-45deg) scale(2.5);
+        fill: red;
+    }
+}
+
+@keyframes arrows-rotate{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    70%{
+        transform: rotate(360deg) scale(1);
+    }
+    85%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes move-company-name{
+    0%{
+        transform: translateX(100vw);
+    }
+    65%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+.fil0 {
+    fill: red;
+    transform: translateX(17px) translateY(115px) rotate(-45deg) scale(2.5);
+    transition: fill ;
+    animation-name: move-fil0;
+    animation-duration: 2s;
+}
+
+
+.fil1 {
+    fill: #006432; 
+    transform:  translateY(75px) rotate(-45deg) scale(2.5);
+    animation-name: move-fil1;
+    animation-duration: 2s;
+}
+
+.arrows {
+    animation-name: arrows-rotate;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.company-name {
+    animation-name: move-company-name;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
