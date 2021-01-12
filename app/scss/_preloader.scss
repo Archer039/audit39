@@ -33,15 +33,6 @@
     align-items: center;
 }
 
-.arrows {
-
-}
-
-.company-name {
-    font-family: "Oswald";
-    font-size: 60px;
-}
-
 svg {
     overflow: visible;
     width: 90px;
@@ -128,12 +119,15 @@ svg {
 }
 
 .arrows {
+    margin-top: 10px;
     animation-name: arrows-rotate;
     animation-duration: 1s;
     animation-delay: 2s;
 }
 
 .company-name {
+    font-family: "Oswald";
+    font-size: 60px;
     animation-name: move-company-name;
     animation-duration: 3s;
     animation-timing-function: ease-in;

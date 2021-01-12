@@ -185,6 +185,7 @@ header {
 
             .logo-title {
                 height        : 150px;
+                padding-top: 7px;
                 display       : flex;
                 flex-direction: row;
                 align-items   : center;
@@ -618,6 +619,8 @@ main {
             font-weight: 400;
 
             a {
+                display: flex;
+                flex-direction: row;
                 color: black;
 
                 img {
@@ -627,9 +630,11 @@ main {
 
             a:first-child {
                 margin-bottom: 20px;
-
                 img {
                     margin: 0 10px
+                }
+                p {
+                    align-self: center;
                 }
             }
 
@@ -693,6 +698,9 @@ footer {
             display        : flex;
             justify-content: center;
             align-items    : center;
+            p {
+                padding-right: 5px;
+            }
         }
     }
 
