@@ -2,6 +2,7 @@
 @import "preloader";
 @import "fonts";
 
+
 //Переменные
 
 $width-layout: 80%;
@@ -54,7 +55,7 @@ header {
             align-items: center;
             width: 75%;
 
-            .logo-arows {
+            .logo-arrows {
                 width: 70%;
                 height: 78%;
 
@@ -91,7 +92,6 @@ header {
                 color: black;
                 margin: 2% 0;
                 vertical-align: middle;
-                transition: all 0.5s ease;
             }
 
             a:hover {
@@ -131,7 +131,7 @@ header {
 
         a {
             color: #ffffff;
-            transition: all 0.5s ease;
+            transition: color 0.5s ease;
         }
         a:hover {
             transform: scale(1.05);
@@ -213,11 +213,13 @@ main {
                 height: 100%;
                 width: 100%;
                 text-align: center;
+                line-height: 40px;
             }
         }
 
         div:hover {
-            transform: scale(1.05);
+            width: 65%;
+            background-color: #cecdcd;
         }
     }
 
@@ -322,7 +324,8 @@ main {
         }
 
         .service__order:hover {
-            transform: scale(1.05);
+            background-color: #f4f4f4;
+            margin-top: 35px;
         }
 
         .service-item1 {
@@ -335,6 +338,7 @@ main {
                 height: 100%;
                 padding-left: 10px;
                 color: #006432;
+                line-height: 60px;
 
                 .service__order__img-box {
                     float: right;
@@ -361,6 +365,7 @@ main {
                 height: 100%;
                 padding-left: 10px;
                 color: #ff0000;
+                line-height: 60px;
 
                 .service__order__img-box {
                     float: right;
@@ -379,24 +384,21 @@ main {
     }
 
     .service-consult {
+        display: block;
         height: 60px;
         width: 600px;
         margin-top: 30px;
         text-align: center;
         background-color: #f4f4f4;
+        color: #8c94a1;
+        font-size: 38px;
+        font-weight: 400;
         border-radius: 5px;
         transition: all 0.5s ease;
-        a {
-            display: block;
-            height: 100%;
-            width: 100%;
-            color: #8c94a1;
-            font-size: 38px;
-            font-weight: 400;
-        }
     }
     .service-consult:hover {
-        transform: scale(1.05);
+        width: 650px;
+        color: #006432;
     }
 }
 
@@ -529,15 +531,15 @@ main {
                 display: flex;
                 flex-direction: row;
                 color: black;
-
+                transition: color 0.5s ease;
                 img {
                     margin: 0 10px 10px 10px;
                 }
-                transition: all 0.5s ease;
             }
 
             a:hover {
-                transform: scale(1.05);
+                transform: scale(1.04);
+                color: #006432;
             }
 
             a:first-child {
@@ -612,3 +614,5 @@ footer {
         }
     }
 }
+
+@import "media";

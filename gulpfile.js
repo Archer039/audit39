@@ -21,6 +21,9 @@ gulp.task('sass', function() {
     return gulp.src('app/scss/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(rename({sufix: '.min'}))
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(minCss())
         .pipe(gulp.dest('public/css/'));
 });

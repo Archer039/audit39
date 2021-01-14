@@ -1,0 +1,44 @@
+@media screen and (max-width: 1280px) {
+    header {
+        .header-box {
+            .logo-box {
+                width: 70%;
+                .logo-arrows {
+                    width: 90%;
+                }
+                .logo-title {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        width: 100%;
+        margin: 0;
+        .header-box {
+            .logo-box {
+                height: 100%;
+                width: 100%;
+                .logo-arrows {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .header-contacts {
+                display: none;
+            }
+        }
+    }
+    main {
+        width: 100%;
+        margin: 0;
+    }
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+}
