@@ -12,6 +12,28 @@
             }
         }
     }
+    #company-info {
+        height: 420px;
+        .column1 {
+            div {
+                width: 70%;
+            }
+            div:hover {
+                width: 80%;
+            }
+        }
+    }
+    #company-features {
+        height: 280px;
+    }
+    #consultation form {
+        .form-data {
+            width: 90%;
+        }
+        .form-question {
+            width: 90%;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
