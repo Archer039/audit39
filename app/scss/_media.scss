@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     header {
         width: 100%;
         margin: 0;
@@ -58,6 +58,180 @@
     main {
         width: 100%;
         margin: 0;
+    }
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        .header-box {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+            .logo-box {
+                height: 100%;
+                width: 100%;
+                .logo-arrows {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .header-contacts {
+                display: none;
+            }
+        }
+        nav {
+            flex-direction: column;
+            height: 100%;
+            a {
+                font-size: 32px;
+            }
+        }
+    }
+    main {
+        width: 100%;
+        margin: 0;
+        .preview {
+            height: auto;
+            .preview-filter {
+                padding: 20px;
+                flex-direction: column;
+                .column1 {
+                    width: 100%;
+                }
+                .column2 {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+        #company-info {
+            height: auto;
+            flex-direction: column;
+            border: none;
+            padding: 20px;
+            .column1 {
+                width: 100%;
+            }
+            .column2 {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        #company-features {
+            height: 350px;
+            .company-features-filter {
+                .feature {
+                    width: 33%;
+                }
+            }
+        }
+        #director {
+            flex-direction: column-reverse;
+            align-items: center;
+            height: auto;
+            padding: 20px;
+            .column1 {
+                padding: 0;
+                text-align: center;
+            }
+            .column2 {
+                padding: 0;
+                .photo {
+                    width: 100%;
+                }
+            }
+        }
+        #service {
+            height: auto;
+            padding: 20px;
+            .services {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                .service__order {
+                    padding: 0;
+                    a {
+                        text-align: center;
+                        padding: 0;
+                        .service__order__img-box {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .service-consult {
+                width: 100%;
+                height: auto;
+            }
+        }
+        #partners {
+            padding: 0 20px;
+            .partners-photos {
+                padding: 0;
+            }
+        }
+        #consultation {
+            height: auto;
+            p {
+                color: #ffffff;
+            }
+            form {
+                .form-data {
+                    flex-direction: column;
+                    div {
+                        width: 100%;
+                        margin-bottom: 10px;
+                        label {
+                            width: 30%;
+                        }
+                        input {
+                            width: 70%;
+                            margin: 0;
+                        }
+                    }
+                }
+                .form-question {
+                    margin: 0 20px 20px 20px;
+                    flex-direction: column;
+                    label {
+                        width: 100%;
+                        margin-bottom: 5px;
+                        border: none;
+                    }
+                    textarea {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #contacts {
+            width: 100%;
+            height: auto;
+            .columns {
+                width: 100%;
+                flex-direction: column;
+                margin: 0;
+                .column1 {
+                    width: 100%;
+                    margin: 0;
+                    padding: 20px;
+                }
+                .column2 {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    .maps {
+                        margin: 0 20px;
+                    }
+                }
+            }
+        }
+
     }
     footer {
         width: 100%;
