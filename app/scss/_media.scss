@@ -66,6 +66,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        .preloader {
+            width: 100%;
+            .svg-animation-load {
+                width: 100%;
+                .company-name {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
     header {
         height: auto;
         .header-box {
@@ -126,7 +137,8 @@
             height: 350px;
             .company-features-filter {
                 .feature {
-                    width: 33%;
+                    width: 32%;
+                    
                 }
             }
         }
