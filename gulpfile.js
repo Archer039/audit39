@@ -45,15 +45,16 @@ gulp.task('fonts', function() {
 
 gulp.task('img', function() {
     return gulp.src('app/img/**/*')
+        .pipe(minImage())
         .pipe(gulp.dest('public/img/'));
 });
 
 gulp.task('watch', function() {
     gulp.watch('app/scss/*.scss', gulp.series('sass'));
     gulp.watch('app/**/*.html', gulp.series('html'));
-    gulp.watch('app/js/*.js', gulp.series('js'));
-    gulp.watch('app/fonts/*', gulp.series('fonts'));
-    gulp.watch('app/img/*', gulp.series('img'));
+    gulp.watch('app/js/**/*.js', gulp.series('js'));
+    gulp.watch('app/fonts/**/*', gulp.series('fonts'));
+    gulp.watch('app/img/**/*', gulp.series('img'));
 });
 
 gulp.task('default', gulp.parallel('serve', 'watch'));

@@ -128,7 +128,7 @@ header {
         align-items: center;
         background: gray;
         background: linear-gradient(to bottom, #535353, #6a6d70);
-
+        
         a {
             color: #ffffff;
             transition: color 0.5s ease;
@@ -136,6 +136,12 @@ header {
         a:hover {
             transform: scale(1.05);
             color: #6ce671;
+        }
+        .menu-icon {
+            display: none;
+        }
+        .menu-icon:hover {
+            cursor: pointer;
         }
     }
 }

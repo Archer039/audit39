@@ -1,5 +1,4 @@
-$(window).on('load', function(){
-    setTimeout(() => {
-        $(".preloader").fadeOut();
-    }, 3500);
+$(".menu-icon").on("click", function(){
+    $(".menu-item").toggle("fast")
 })
+

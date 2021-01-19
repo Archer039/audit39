@@ -98,8 +98,13 @@
         nav {
             flex-direction: column;
             height: 100%;
+            padding: 10px 0;
             a {
                 font-size: 32px;
+                display: none;
+            }
+            .menu-icon {
+                display: block;
             }
         }
     }
