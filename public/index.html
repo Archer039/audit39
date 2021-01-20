@@ -27,6 +27,25 @@
         </div>
         <p class="load-info">Подождите, идёт загрузка</p>
     </div>
+    <div class="order-modal">
+        <div class="order-box">
+            <h3>Заказать услугу</h3>
+            <p>Оставьте заявку и мы с Вами свяжемся <br>в ближайшее время</p>
+            <form action="">
+                <input type="text" name="order-name" id="order-name" placeholder="Ваше имя">
+                <input type="tel" name="order-tel" id="order-name" placeholder="Номер телефона">
+                <textarea name="order-comment" id="order-comment" cols="30" rows="3" placeholder="Комментарий (необязательно)"></textarea>
+                <div class="button-box">
+                    <button name="order-submit" type="submit"><p>Заказать услугу</p></button>
+                    <div class="button-img-box"><img src="img/icons/arrow-green.png" alt="" height="65px"></div>
+                </div>
+                <label for="order-submit">
+                    <p>Нажимая кнопку "Заказать услугу", я принимаю <a href="#">Пользовательское соглашение</a> и подтверждаю, что ознакомлен и согласен с <a href="#">Политикой конфиденциальности</a> данного сайта</p>
+                </label>
+            </form>
+            <img class="close" src="img/icons/close.png" alt="закрыть" width="50px" height="50px">
+        </div>
+    </div>
     <header>
         <div class="header-box">
             <div class="logo-box">
@@ -55,7 +74,7 @@
         </nav>
     </header>
     <main>
-        <section class="preview">
+        <section id="preview">
             <div class="preview-filter">
                 <div class="column1">
                     <h1>Аудиторские услуги<br> в Калининграде</h1>
@@ -119,9 +138,9 @@
                         <p>Аудиторская проверка</p>
                         <p class="coast">Стоимость от 10 000 руб.</p>
                     </div>
-                    <div class="service__order">
-                        <a href="">Заказать услугу<div class="service__order__img-box"><img
-                                    src="img/icons/arrow-green.png" alt="" height="65px"></div></a>
+                    <div class="order">
+                        <p>Заказать услугу</p>
+                        <div class="order__img-box"><img src="img/icons/arrow-green.png" alt="" height="65px"></div>
                     </div>
                 </div>
                 <div class="service-item2">
@@ -129,9 +148,9 @@
                         <p>Аудит отчётности</p>
                         <p class="coast">Стоимость от 10 000 руб.</p>
                     </div>
-                    <div class="service__order">
-                        <a href="">Заказать услугу <div class="service__order__img-box"><img
-                                    src="img/icons/arrow-red.png" alt="" height="65px"></div></a>
+                    <div class="order">
+                        <p>Заказать услугу</p>
+                        <div class="order__img-box"><img src="img/icons/arrow-red.png" alt="" height="65px"></div>
                     </div>
                 </div>
             </div>
