@@ -1,5 +1,4 @@
 .order-modal {
-    height: 100%;
     z-index: 99;
     position: fixed;
     top: 0;
@@ -114,4 +113,52 @@
             transform: scale(1.05);
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+.order-modal {
+    .order-box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border: none;
+        align-items: center;
+        h3 {
+            font-size: 32px;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        form {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+            input {
+                width: 100%;
+
+            }
+            textarea {
+                width: 100%;
+
+            }
+            .button-box {
+                width: 100%;
+                height: 60px;
+                margin-top: 40px;
+                button {
+                    width: 100%;
+                }
+            }
+            label {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        .close {
+            position: static;
+            margin-top: 20px;
+        }
+    }
+}
 }
