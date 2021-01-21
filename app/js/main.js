@@ -69,6 +69,7 @@ $(window).resize(function () {
     quantityItem = Math.trunc(widthSlider / widthItem);
     widthMargin = (widthSlider % widthItem) / quantityItem;
     startPosition = widthMargin / 2;
+    positionDisplacement = 0;
 
     for (let i = 0; i < partners.length; i++) {
         $("#photo-" + i).css("left", startPosition + "px");
@@ -76,22 +77,24 @@ $(window).resize(function () {
     }
 })
 
-$('.arrow-left').on('click', function(){
-    positionDisplacement -= widthItem + widthMargin;
-    startPosition = (widthMargin / 2) - positionDisplacement;
-    for (let i = 0; i < partners.length; i++) {
-        $("#photo-" + i).css("left", startPosition + "px");
-        startPosition += widthItem + widthMargin;
+$('.arrow-left').on('click', function () {
+    if (positionDisplacement > 0) {
+        positionDisplacement -= widthItem + widthMargin;
+        startPosition = (widthMargin / 2) - positionDisplacement;
+        for (let i = 0; i < partners.length; i++) {
+            $("#photo-" + i).css("left", startPosition + "px");
+            startPosition += widthItem + widthMargin;
+        }
     }
-    console.log(positionDisplacement)
 })
 
-$('.arrow-right').on('click', function(){
-    positionDisplacement += widthItem + widthMargin;
-    startPosition = (widthMargin / 2) - positionDisplacement;
-    for (let i = 0; i < partners.length; i++) {
-        $("#photo-" + i).css("left", startPosition + "px");
-        startPosition += widthItem + widthMargin;
+$('.arrow-right').on('click', function () {
+    if (positionDisplacement < (widthItem + widthMargin) * (partners.length - quantityItem) ) {
+        positionDisplacement += widthItem + widthMargin;
+        startPosition = (widthMargin / 2) - positionDisplacement;
+        for (let i = 0; i < partners.length; i++) {
+            $("#photo-" + i).css("left", startPosition + "px");
+            startPosition += widthItem + widthMargin;
+        }
     }
-    console.log(positionDisplacement)
 })
