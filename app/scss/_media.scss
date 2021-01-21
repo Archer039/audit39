@@ -158,18 +158,25 @@
             }
             .column2 {
                 padding: 0;
-                .photo {
+                .director-photo {
                     width: 100%;
                 }
             }
         }
         #service {
-            height: auto;
+            height: 650px;
             padding: 20px;
             .services {
                 width: 100%;
+                height: 450px;
                 flex-direction: column;
                 align-items: center;
+                .service-item1 {
+                    height: 200px;
+                }
+                .service-item2 {
+                    height: 200px;
+                }
                 .service__order {
                     padding: 0;
                     a {
@@ -184,6 +191,7 @@
             .service-consult {
                 width: 100%;
                 height: auto;
+
             }
         }
         #partners {
